@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
 
   buttonWrapper: {
     height: 50,
-    width: 100,
+    width: 200,
     backgroundColor: colors.liqidRed,
     justifyContent: 'center',
     alignItems: 'center',
