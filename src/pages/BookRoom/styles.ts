@@ -4,7 +4,7 @@ import {colors} from '../../utils/colors';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    marginTop: Dimensions.get('window').height * 0.05,
   },
   dateWrapper: {
     flexDirection: 'row',
@@ -13,6 +13,10 @@ export const styles = StyleSheet.create({
     marginBottom: 40,
     paddingLeft: 10,
     paddingRight: 10,
+  },
+  dateText: {
+    fontSize: 20,
+    fontWeight: 'bold',
   },
   datePicker: {
     width: 125,

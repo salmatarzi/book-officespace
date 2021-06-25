@@ -23,6 +23,7 @@ const mockRoomsTwo: AvailableRoom[] = [
   {roomName: 'Backend/Dev Ops', capacity: 3},
   {roomName: 'Frontent', capacity: 1},
   {roomName: 'Strategy & Ops', capacity: 3},
+  {roomName: 'Product', capacity: 5},
 ];
 
 const BookRoom: React.FC<{navigation: BookRoomScreenNavigationProp}> = ({
@@ -64,7 +65,7 @@ const BookRoom: React.FC<{navigation: BookRoomScreenNavigationProp}> = ({
   return (
     <View style={styles.container}>
       <View style={styles.dateWrapper}>
-        <Text>Date</Text>
+        <Text style={styles.dateText}>Date</Text>
         <DateTimePicker
           style={styles.datePicker}
           value={date}
