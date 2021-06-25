@@ -14,10 +14,12 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Login from './src/pages/Login/Login';
 import Home from './src/pages/Home/Home';
+import BookRoom from './src/pages/BookRoom/BookRoom';
 
 export type RootStackParamList = {
   Home: undefined;
   Login: undefined;
+  BookRoom: undefined;
 };
 
 const App = () => {
@@ -27,6 +29,7 @@ const App = () => {
       <Stack.Navigator>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="BookRoom" component={BookRoom} />
       </Stack.Navigator>
     </NavigationContainer>
   );
