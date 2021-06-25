@@ -54,7 +54,6 @@ const Home: React.FC<{navigation: HomeScreenNavigationProp}> = ({
       <FlatList
         data={mockData}
         renderItem={bookedRoom}
-        style={styles.listWrapper}
         keyExtractor={(_, index) => index.toString()}
       />
     </View>
